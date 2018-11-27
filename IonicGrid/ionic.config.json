@@ -1,0 +1,7 @@
+{
+  "name": "IonicGrid",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "StripePayment",
+  "integrations": {},
+  "type": "ionic-angular"
+}

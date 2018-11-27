@@ -1,0 +1,7 @@
+{
+  "name": "PagesAndTabs",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

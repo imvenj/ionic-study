@@ -1,0 +1,60 @@
+<ion-header color="danger">
+  <ion-navbar>
+    <ion-title>
+      John Doe
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row text-center id="info-row">
+      <ion-col>
+        <ion-avatar>
+          <img src="assets/imgs/avatar.png">
+        </ion-avatar>
+        <h3>Based in</h3>
+        <h4>Vienna, Austria</h4>
+      </ion-col>
+    </ion-row>
+
+    <ion-row text-center id="contact-icons">
+      <ion-col >
+        <ion-icon name="call" color="danger"></ion-icon>
+        <ion-icon name="text" color="danger"></ion-icon>
+        <ion-icon name="globe" color="danger"></ion-icon>
+        <ion-icon name="more" color="danger"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <h2 text-center>
+      <ion-icon name="paper" color="danger"></ion-icon> Social Feed
+    </h2>
+
+    <ion-row class="social-row" *ngFor="let feed of socialFeed">
+      <ion-col col-2>
+        <ion-avatar>
+          <img src="assets/imgs/avatar.png">
+        </ion-avatar>
+      </ion-col>
+      <ion-col col-10>
+        <ion-row>
+          <ion-col>
+            <h3>John Doe @johndoe</h3>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <p>{{ feed.post }}</p>
+        </ion-row>
+
+        <ion-row text-center class="social-interaction-row">
+          <ion-icon name="undo" color="danger"></ion-icon>
+          <ion-icon name="repeat" color="danger"></ion-icon>
+          <ion-icon name="heart" color="danger"></ion-icon>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

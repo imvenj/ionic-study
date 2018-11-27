@@ -1,0 +1,7 @@
+{
+  "name": "MenuTabsSegment",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

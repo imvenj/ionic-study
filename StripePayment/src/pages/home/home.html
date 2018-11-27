@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="gray-bg">
+  <p class="center">
+    <ion-icon name="card" class="icon-large"></ion-icon>
+  </p>
+  <ion-card>
+    <ion-card-header>
+      Credit or debit card
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item >
+        <div #cardElement>
+          <!-- a Stripe Element will be inserted here. -->
+        </div>
+      </ion-item>
+      <button ion-button full (click)="onSubmit()">
+        Pay
+      </button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

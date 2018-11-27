@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list >
+    <ion-item>
+      <ion-label fixed >Name</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="user.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed >Email</ion-label>
+      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed >Phone</ion-label>
+      <ion-input type="text" [(ngModel)]="user.phone"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label fixed >Website</ion-label>
+      <ion-input type="text" [(ngModel)]="user.website"></ion-input>
+    </ion-item>
+  </ion-list>
+  
+  <button ion-button full (click)="toggleContact()">Toggle Contact Component</button>
+  <button ion-button full (click)="openContact()">Show Contact Page</button>
+
+  <page-contact [userInput]='user' *ngIf="showContact"></page-contact>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "LeftAndRightMenu",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

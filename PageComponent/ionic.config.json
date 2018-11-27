@@ -1,0 +1,7 @@
+{
+  "name": "PageComponent",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

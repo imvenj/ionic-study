@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-segment [(ngModel)]="seg" color="danger">
+    <ion-segment-button value="flame">
+      <ion-icon name="flame"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="leaf">
+      <ion-icon name="leaf"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+  <div *ngIf="seg == 'flame'">
+    <ion-card>
+      <ion-card-header>
+        Flame
+      </ion-card-header>
+      <ion-card-content>
+        A flame (from latin flamma) is visible, gaseous part of a fire.
+        It is caused by a highly exothermic reaction taking place in thin zone.
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

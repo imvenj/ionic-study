@@ -1,0 +1,7 @@
+{
+  "name": "PluginTest",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

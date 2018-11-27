@@ -1,0 +1,14 @@
+page-home {
+    .center {
+        text-align: center;
+    }
+    ion-icon.large {
+        font-size: 7em;
+    }
+    ion-icon.lighter {
+        opacity: 0.5;
+    }
+    .error {
+        color: red;
+    }
+}

@@ -1,0 +1,49 @@
+<ion-header *ngIf="!userInput">
+    <ion-navbar>
+        <ion-title>Contact Page</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            User Contact
+        </ion-card-header>
+        <ion-card-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        Name
+                    </ion-col>
+                    <ion-col>
+                        {{ user.name }}
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        Email
+                    </ion-col>
+                    <ion-col>
+                        {{ user.email }}
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        Phone
+                    </ion-col>
+                    <ion-col>
+                        {{ user.phone }}
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        Website
+                    </ion-col>
+                    <ion-col>
+                        {{ user.website }}
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
